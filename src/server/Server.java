@@ -38,13 +38,13 @@ public class Server extends WebSocketServer{
 		try{
 			JSONMessage = new JSONObject(msgReceive);
 			String message = JSONMessage.getString("function");
-			if(message.equals("register")){
+			if(message.equals("Register")){
 				 ApplicationContext context = new ClassPathXmlApplicationContext("Beans.xml");
 			      UserJDBCTemplate studentJDBCTemplate = 
 			         (UserJDBCTemplate)context.getBean("UserJDBCTemplate");
 			}
 		}catch(JSONException e){
-			e.printStackTrace();
+			System.out.println(e.getMessage());
 		}
 		
 	}
