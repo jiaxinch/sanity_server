@@ -1,5 +1,8 @@
+package server;
+import javax.sql.DataSource;
 
 public interface UserDAO {
+	public void setDataSource(DataSource ds);
 	public void create(String userName, String email, String psword, String psword2);
 	public User getUser(String email);
 	public Boolean logIn(String email, String psword, String psword2);
