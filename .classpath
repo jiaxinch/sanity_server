@@ -10,5 +10,10 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="lib" path="java-json.jar"/>
+	<classpathentry kind="lib" path="org.springframework.jdbc.jar"/>
+	<classpathentry kind="lib" path="org.springframework.transaction.jar"/>
+	<classpathentry kind="lib" path="org.springframework.core.jar"/>
+	<classpathentry kind="lib" path="org.springframework.context.jar"/>
+	<classpathentry kind="lib" path="org.springframework.beans.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

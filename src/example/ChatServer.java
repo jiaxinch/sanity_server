@@ -67,9 +67,6 @@ public class ChatServer extends WebSocketServer {
 
 	@Override
 	public void onMessage( WebSocket conn, String message2 ) {
-		
-		
-		
 		JSONObject jso;
 		try {
 			jso = new JSONObject(message2);
@@ -80,7 +77,8 @@ public class ChatServer extends WebSocketServer {
 			//vector's first string would be username, second would be passwordd
 			Collection<WebSocket> toret = null;
 			toret.add(conn);
-			this.broadcast(UserDAO.login(jso).toString(),toret);
+			//this.broadcast(UserDAO.login(jso).toString(),toret);
+			System.out.println(" ");
 		}
 		if(message.equals("Register")){
 			//up = username + password String set.
